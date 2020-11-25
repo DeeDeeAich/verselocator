@@ -11,6 +11,7 @@ Refer to requirements.txt or this list
 * requests
 * six
 * urllib3
+* python-dotenv
 
 **All specific versions are contained in requirements.txt. Some editors may have a function to install the libraries automatically in a given requirements.txt file.**
 
