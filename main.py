@@ -4,9 +4,15 @@ CREATED BY DEEDEEAICH
 
 from tkinter import *
 from tkinter import ttk
-from api_key import api_key
+import os
+from dotenv import load_dotenv
 import requests
 import json
+
+# Loads API Key from an .env file, is more secure than just regular py file
+load_dotenv("api_key.env")
+api_key = os.getenv("API_KEY")
+api_key = json.loads(api_key)
 
 # Creates first window, sets title, sets the size, sets the icon
 root = Tk()

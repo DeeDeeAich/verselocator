@@ -129,13 +129,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-api_key.py
-test.py
-setup.py
-/build
-/main
-/dist
-main.spec
-.idea
-venv
 __pycache__
