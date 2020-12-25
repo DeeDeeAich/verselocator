@@ -95,7 +95,7 @@ ttk.Label(root, font=("Arial", 7), text="Unless otherwise indicated, all Scriptu
                                         "a publishing ministry of Good News Publishers. Used by permission. All "
                                         "rights reserved. \nYou may not copy or download more than 500 consecutive "
                                         "verses of the ESV Bible or more than one half of any book of the ESV "
-                                        "Bible.", borderwidth=15).pack()
+                                        "Bible.").pack()
 # Label indicating verse history list
 ttk.Label(root, text="Verses History: ", font=("Day Roman", 11)).pack()
 
