@@ -1,5 +1,5 @@
 # verselocator
-A Python script utilizing the ESV API that finds a user-specified verse. 
+A Python script utilizing the ESV API that finds user-specified verses.
 
 # Required Libraries
 Refer to requirements.txt or this list
