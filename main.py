@@ -21,12 +21,12 @@ root.geometry("680x225")
 root.iconbitmap("icon.ico")
 
 # Header/Title - Uses Day Roman font (https://www.dafont.com/day-roman.font)
-Label(root, text="Verse Locator", font=("Day Roman", 30)).pack()
+header = ttk.Label(root, text="Verse Locator", font=("Day Roman", 30)).pack()
 
 # Creates the Entry widget verse_input that takes the user-requested verse
-verse_input = Entry(root, width=30)
+verse_input = ttk.Entry(root, width=30)
 verse_input.pack()
-Label(text="", borderwidth=3, font=("Arial", 2)).pack()
+ttk.Label(text="", borderwidth=3, font=("Arial", 2)).pack()
 
 # Height variable is for increasing height each time a verse is added to the verse history list.
 height = 225
@@ -85,18 +85,18 @@ def enter(event):
 
 # Binds enter key and the enter function to run the on_click() function when enter is pressed
 root.bind("<Return>", enter)
-locate_button = Button(root, text="Locate", command=on_click)
+locate_button = ttk.Button(root, text="Locate", command=on_click)
 locate_button.pack()
 # Label is created for spacing between button and the requesting verse notice
-Label(text="", borderwidth=3, font=("Arial", 2)).pack()
+ttk.Label(text="", borderwidth=3, font=("Arial", 2)).pack()
 # Creates label for requesting verses notice
-Label(root, font=("Arial", 7), text="Unless otherwise indicated, all Scripture quotations are from the ESV® Bible "
+ttk.Label(root, font=("Arial", 7), text="Unless otherwise indicated, all Scripture quotations are from the ESV® Bible "
                                         "(The Holy Bible, English Standard Version®), \ncopyright © 2001 by Crossway, "
                                         "a publishing ministry of Good News Publishers. Used by permission. All "
                                         "rights reserved. \nYou may not copy or download more than 500 consecutive "
                                         "verses of the ESV Bible or more than one half of any book of the ESV "
-                                        "Bible.", borderwidth=5).pack()
+                                        "Bible.", borderwidth=15).pack()
 # Label indicating verse history list
-Label(root, text="Verses History: ", font=("Day Roman", 11)).pack()
+ttk.Label(root, text="Verses History: ", font=("Day Roman", 11)).pack()
 
 root.mainloop()
