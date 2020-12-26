@@ -131,3 +131,6 @@ dmypy.json
 
 __pycache__
 .vscode/
+.DS_Store
+api_key.env
+setup.py
